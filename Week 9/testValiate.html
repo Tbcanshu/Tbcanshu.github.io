@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Vlidate</title>
+    <script src="validate.js"></script>
+    <script>
+       // function callme(){
+            alert("Hello World");
+            document.getElementById("Result")
+            innerHTML="You have clicked on the button";
+        
+        //}
+        function validate(){
+            var username =  document.getElementById
+            ("username").value;
+            var pass = document.getElementById("pass").value;
+            if (username!="" && pass!=""){
+                return true;
+            }
+            document.getElementById("Result")
+            innerHTML="Please fill all the inputs";
+          return false;
+        }
+    </script>
+</head>
+<body>
+    <form action="gotopage.html" method="get"
+    onsubmit="return validate()">
+    Name: <input type="text" name="username"
+    id="username"></br>
+    Password: <input type="password" name="pass"
+    id="pass"></br>
+    <input type="submit" value="submit">
+    <div id="result"></div>
+</body>
+</html>
